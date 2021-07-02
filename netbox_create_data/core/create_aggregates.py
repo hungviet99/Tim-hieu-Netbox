@@ -5,7 +5,7 @@ from get_data_json import get_aggregates, get_key_data
 from check_data_netbox import check_rir, check_tenants, netbox
 
 today = date.today()
-today = today.strftime("%Y-%m-%d")
+today = today.strftime("%Y-%m-%d")  # Lấy ra ngày hiện tại
 
 def get_data_aggregates(numerical_order, data):
     rir_name = data['Cơ quan đăng ký internet khu vực']['{}' .format(numerical_order)]
